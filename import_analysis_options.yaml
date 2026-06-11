@@ -1,0 +1,22 @@
+rules:
+  domain_must_not_import_data:
+    search_file_path_reg_exp: ".*/features/.*/domain/.*\\.dart"
+    not_allow_import_reg_exps:
+      - ".*/features/.*/data/.*\\.dart"
+    ignore_import_reg_exps: []
+
+  domain_must_not_import_presentation:
+    search_file_path_reg_exp: ".*/features/.*/domain/.*\\.dart"
+    not_allow_import_reg_exps:
+      - ".*/features/.*/presentation/.*\\.dart"
+      - ".*/imports/core_imports\\.dart"
+      - ".*/imports/imports\\.dart"
+    ignore_import_reg_exps: []
+
+  data_must_not_import_presentation:
+    search_file_path_reg_exp: ".*/features/.*/data/.*\\.dart"
+    not_allow_import_reg_exps:
+      - ".*/features/.*/presentation/.*\\.dart"
+      - ".*/imports/core_imports\\.dart"
+      - ".*/imports/imports\\.dart"
+    ignore_import_reg_exps: []
