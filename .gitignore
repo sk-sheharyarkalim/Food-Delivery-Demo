@@ -39,13 +39,8 @@ app.*.symbols
 # Obfuscation related
 app.*.map.json
 
-# Android Studio will place build artifacts here
-/android/app/debug
-/android/app/profile
-/android/app/release
-
-# Release signing (keystore lives outside the project; never commit credentials)
-/android/key.properties
+# Native platform projects (regenerate via `flutterfire configure` / Flutter tooling)
+/android/
 
 # Environment secrets
 .env
